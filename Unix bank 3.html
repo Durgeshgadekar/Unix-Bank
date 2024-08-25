@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Bank - User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .dashboard-header {
+            background-color: #d91c5c;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dashboard-header .profile {
+            display: flex;
+            align-items: center;
+        }
+        .dashboard-header .profile img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .dashboard-header .profile .username {
+            font-size: 18px;
+        }
+        .dashboard-header .balance {
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        /* .dashboard-header .acc {
+            font-size: 18px;
+            font-weight: bold;
+            float: right;
+        } */
+        .withdraw-section {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .withdraw-section h3 {
+            color: #d91c5c;
+            margin-bottom: 20px;
+        }
+        .withdraw-section input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .withdraw-section input[type="submit"] {
+            background-color: #d91c5c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .withdraw-section input[type="submit"]:hover {
+            background-color: #c81b53;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <div class="profile">
+            <img src="icon img.jpg" alt="Profile Icon">
+            <span class="username">Ashok Shrikisan Waghmode</span>
+        </div>
+        <!-- <div class="acc">
+          Ac No: xxxx-xxxx-4970
+        </div> -->
+        <div class="balance">
+            Ac No: xxxx-xxxx-4970 <br>
+            Balance: ₹74,00,000
+        </div>
+
+    </header>
+
+    <section class="withdraw-section">
+        <h3>Withdraw Funds</h3>
+        <form action="Unix bank 4.html" method="POST">
+            <input type="number" name="amount" placeholder="Enter amount to withdraw" required>
+            <input type="submit" value="Withdraw">
+        </form>
+    </section>
+
+</body>
+</html>
